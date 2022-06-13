@@ -1,0 +1,30 @@
+body{
+    background-color:rgb(227, 245, 255) !important;
+}
+
+h1{
+    color:rgb(14, 123, 248);
+}
+
+.main{
+    background-color:rgb(240, 250, 255);
+    border:lightgray;
+    border-style:solid;
+    border-radius:1%;
+    border-width:1px;
+    margin-right:10px;
+    margin-left:10px;
+    padding-left:10px;
+    padding-right:10px;
+    height:100%;
+    overflow-wrap:break-word;
+}
+
+.transcript{
+    padding-bottom:5px;
+    margin-top:5px;
+}
+
+.card-title{
+    margin-top:5%;
+}
