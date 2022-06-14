@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="row" style="margin-top:5vh">
+    <div class="row" style="margin-top:5vh;width:100%">
         <h1 class="text-center display-4">{% block title %} Data Collection Hub {% endblock %}</h1>
     </div>
-    <div class="row">
+    <div class="row" style="width:100%;margin:0">
         <a class="btn btn-outline-primary" id="gesturecontrol" href="/gestures">Gesture Control</a>
     </div
 {% endblock %}
 
 {% block extra %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
+<div class="row" style="position:fixed;bottom:0;right:5px">
+    <div class="col item social">
+        <a href="https://github.com/WT-MM" target="_blank" rel="noopener noreferrer"><i class="icon ion-social-github"></i></a>
+    </div>
+</div>
 {% endblock %}
