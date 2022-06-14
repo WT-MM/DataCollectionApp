@@ -25,4 +25,8 @@ def getRelPositions(landmarks):
     return [item for sublist in dists for item in sublist]
 
 def calcDist(first, second, landmarks):
-    return (landmarks[first].get('x')-landmarks[second].get('x'), landmarks[first].get('y')-landmarks[second].get('y'), landmarks[first].get('z')-landmarks[second].get('z'))
+    flip = True
+    calculated = (landmarks[first].get('x')-landmarks[second].get('x'), landmarks[first].get('y')-landmarks[second].get('y'), landmarks[first].get('z')-landmarks[second].get('z'))
+    if flip:
+        calculated = [-1 * m for m in calculated]
+    return calculated
