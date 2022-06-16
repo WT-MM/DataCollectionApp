@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, flash, request, redirect, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify, send_from_directory
 from modules.gestures import *
 import pygsheets
 import ast

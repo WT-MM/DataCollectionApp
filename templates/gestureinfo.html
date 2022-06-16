@@ -6,24 +6,43 @@
     </div>
     <div class="row">
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/fist.png') }}">
+            <p>Fist: make a fist in any orientation</p>
         </div>
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/face.png') }}">
+            <p>Face: face the palm towards the camera</p>
         </div>
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/corner.png') }}">
+            <p>Corner: splay out the fingers to form 3 perpendicular lines in any orientation</p>
         </div>
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/cup.png') }}">
+            <p>Cup: form a 'C' with the hand in any orientation</p>
         </div>
     </div>
     <div class="row">
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/circle.png') }}">
+            <p>Circle: form a circle with the hand in any orientation</p>
         </div>
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/side.png') }}">
+            <p>Side: orient an open hand to the side</p>
         </div>
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/forward.png') }}">
+            <p>Forward: orient an open hand toward the camera with the palm down</p>
         </div>
         <div class="col">
+            <img src="{{ url_for('static', filename='imgs/gestures/checkmark.png') }}">
+            <p>Checkmark: splay out the fingers to form 2 perpendicular lines in any orientation</p>
         </div>
     </div
+    <div class="row">
+        <a class="btn btn-outline-primary" href="/gestures">Back to Collection Page</a>
+    </div>
 {% endblock %}
 
 {% block extra %}
