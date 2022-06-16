@@ -7,6 +7,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
 
 <script type="module" src="{{ url_for('static', filename='js/gesture.js') }}"></script>
+<style>
+    #sliderlabel:hover{
+        transform:scale(1.5)
+    }
+</style>
     <div class="row" style="margin-top:5vh;width:100%">
         <h1 class="text-center display-4">{% block title %} Gesture Control {% endblock %}</h1>
     </div>
@@ -15,7 +20,7 @@
         <canvas class="output_canvas" width="768px" height="432px" style="margin:0;padding:0;-moz-transform: scale(-1, 1);-webkit-transform: scale(-1, 1);-o-transform: scale(-1, 1);transform: scale(-1, 1);filter: FlipH;"></canvas>
     </div>
     <div class="row" style="text-align:center;margin:10px">
-        <label for="yeppers" class="form-label" id="sliderlabel">MMYEP</label>
+        <a href="/gestures/help" style="text-decoration:none;width:4rem;margin:auto" id="sliderlabel">MMYEP</a>
         <input type="range" class="form-range" min="0" max="7" step="1" id="yeppers">
     </div>
     <div class="row" width="100%" style="text-align:center;margin:10px">

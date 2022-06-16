@@ -47,11 +47,11 @@ const camera = new Camera(videoElement, {
 camera.start();
 
 slider.addEventListener('change', () => {
-  labelslider.textContent = labels[slider.value]
+  labelslider.textContent = labels[slider.value]+"*"
 })
 
 
-labelslider.textContent = labels[slider.value]
+labelslider.textContent = labels[slider.value] + "*"
 
 function errorFunc(error){
   console.log("Error: " + error.responseText)
